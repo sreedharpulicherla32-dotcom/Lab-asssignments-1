@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Playfair+Display:wght@700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f4ecd8; /* Warm aged parchment */
+    background-image: radial-gradient(#dfd3b8 1px, transparent 1px);
+    background-size: 20px 20px;
+    color: #2b2118; /* Espresso ink */
+    font-family: 'Lora', Georgia, 'Times New Roman', serif;
+    line-height: 1.65;
+}
+
+/* Header */
+header {
+    background-color: #5c1a1b; /* Vintage burgundy */
+    color: #f8f1e0;
+    padding: 1.6rem 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    border-bottom: 4px double #d4a359;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 1.1rem;
+}
+
+.logo {
+    background-color: #f8f1e0;
+    color: #5c1a1b;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.65rem;
+    font-weight: 800;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 3px double #5c1a1b;
+    box-shadow: 0 0 0 3px #d4a359;
+}
+
+.brand-text h1 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.75rem;
+    letter-spacing: 1.5px;
+}
+
+.tagline {
+    font-size: 0.92rem;
+    color: #e6c280;
+    font-style: italic;
+}
+
+.portal-badge {
+    font-size: 0.92rem;
+    letter-spacing: 0.5px;
+    color: #f8f1e0;
+    background: rgba(0, 0, 0, 0.22);
+    border: 1px solid #d4a359;
+    padding: 0.45rem 1.1rem;
+    border-radius: 4px;
+}
+
+/* Navigation */
+nav {
+    background-color: #2b2118;
+    padding: 0.85rem 5%;
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 2px solid #8c6239;
+}
+
+nav a {
+    color: #f4ecd8;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #e6c280;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+/* Main Container */
+main {
+    max-width: 1080px;
+    margin: 2.5rem auto;
+    padding: 0 1.5rem;
+}
+
+section,
+aside {
+    margin-bottom: 2.8rem;
+}
+
+.section-header {
+    margin-bottom: 1.4rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 2px solid #cbbba0;
+}
+
+.section-header h2,
+aside h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: #5c1a1b;
+    font-size: 1.75rem;
+    margin-bottom: 0.2rem;
+}
+
+.section-header p {
+    color: #5e4b3c;
+    font-style: italic;
+    font-size: 0.98rem;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #fbf6ea;
+    color: #2b2118;
+    padding: 2.8rem;
+    border: 2px solid #8c6239;
+    outline: 1px solid #8c6239;
+    outline-offset: -7px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    box-shadow: 6px 6px 0px #cbbba0;
+}
+
+.hero-content {
+    max-width: 560px;
+}
+
+.hero-tag {
+    display: inline-block;
+    background-color: #e8dcc4;
+    color: #5c1a1b;
+    border: 1px solid #8c6239;
+    padding: 0.2rem 0.85rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.85rem;
+}
+
+.hero h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: #5c1a1b;
+    font-size: 2.3rem;
+    margin-bottom: 0.6rem;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 1.05rem;
+    color: #4a3b2c;
+    margin-bottom: 1.6rem;
+}
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.explore,
+.register-btn {
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.92rem;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    border-radius: 3px;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.2s ease;
+}
+
+.explore {
+    background-color: #5c1a1b;
+    color: #f8f1e0;
+    border: 1px solid #2b2118;
+    box-shadow: 3px 3px 0px #2b2118;
+}
+
+.explore:hover {
+    background-color: #752223;
+    transform: translate(-1px, -1px);
+    box-shadow: 4px 4px 0px #2b2118;
+}
+
+.register-btn {
+    background-color: #f4ecd8;
+    color: #2b2118;
+    border: 1px solid #8c6239;
+    box-shadow: 3px 3px 0px #8c6239;
+}
+
+.register-btn:hover {
+    background-color: #eadbc0;
+    transform: translate(-1px, -1px);
+    box-shadow: 4px 4px 0px #8c6239;
+}
+
+.hero-image {
+    font-size: 3.3rem;
+    letter-spacing: 0.6rem;
+    background-color: #f4ecd8;
+    border: 1px dashed #8c6239;
+    padding: 1.2rem 1.6rem;
+    border-radius: 4px;
+    filter: sepia(0.25);
+}
+
+/* Events Grid */
+.event-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.6rem;
+}
+
+.event-card {
+    background-color: #fbf6ea;
+    padding: 1.6rem;
+    border: 1px solid #8c6239;
+    border-top: 5px solid #5c1a1b;
+    border-radius: 3px;
+    box-shadow: 5px 5px 0px #d6c7ad;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.event-card:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 7px 7px 0px #bfa984;
+}
+
+.event-tag {
+    display: inline-block;
+    background-color: #efe4ce;
+    color: #5c1a1b;
+    border: 1px solid #b89b72;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.18rem 0.7rem;
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.event-card h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: #2b2118;
+    margin-bottom: 0.4rem;
+    font-size: 1.3rem;
+}
+
+.event-date {
+    color: #8c4a27;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 0.92rem;
+    margin-bottom: 0.5rem;
+}
+
+.event-desc {
+    color: #4a3b2c;
+    font-size: 0.95rem;
+}
+
+/* Activities Grid */
+.activity-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+.activity-item {
+    background-color: #fbf6ea;
+    padding: 1.5rem;
+    border: 1px solid #8c6239;
+    border-left: 5px solid #8c6239;
+    border-radius: 3px;
+    box-shadow: 4px 4px 0px #d6c7ad;
+}
+
+.activity-item h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: #5c1a1b;
+    margin-bottom: 0.4rem;
+    font-size: 1.2rem;
+}
+
+.activity-item p {
+    color: #4a3b2c;
+    font-size: 0.95rem;
+}
+
+/* Announcements Bulletin Board */
+aside {
+    background-color: #f9f1df;
+    border: 2px dashed #8c6239;
+    padding: 1.6rem 2rem;
+    border-radius: 4px;
+    box-shadow: 4px 4px 0px #d6c7ad;
+}
+
+aside h2 {
+    font-size: 1.45rem;
+    margin-bottom: 0.45rem;
+}
+
+aside p {
+    color: #3d2f22;
+    font-size: 0.98rem;
+}
+
+aside a {
+    color: #5c1a1b;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+/* Footer */
+footer {
+    background-color: #2b2118;
+    color: #dfd3b8;
+    text-align: center;
+    padding: 1.6rem;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    border-top: 4px double #d4a359;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .brand {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 1.2rem;
+    }
+
+    .hero {
+        text-align: center;
+        justify-content: center;
+        padding: 2.2rem 1.5rem;
+    }
+
+    .hero-actions {
+        justify-content: center;
+    }
+
+    .hero-image {
+        font-size: 2.8rem;
+        letter-spacing: 0.4rem;
+    }
+}

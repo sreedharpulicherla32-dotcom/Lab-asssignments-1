@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <style>
+        body {
+            font-family: Georgia, serif;
+            background: #f4ecd8;
+            color: #2b2118;
+            max-width: 600px;
+            margin: 2rem auto;
+            padding: 1.5rem;
+        }
+        form {
+            background: #fbf6ea;
+            padding: 1.5rem;
+            border: 2px solid #8c6239;
+        }
+        .field {
+            margin-bottom: 1rem;
+        }
+        label.block {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 0.3rem;
+        }
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #8c6239;
+            box-sizing: border-box;
+        }
+        fieldset {
+            border: 1px solid #cbbba0;
+            margin-bottom: 1rem;
+            padding: 0.8rem;
+        }
+        button {
+            background: #5c1a1b;
+            color: #fff;
+            padding: 0.6rem 1.2rem;
+            border: none;
+            cursor: pointer;
+        }
+        :focus-visible {
+            outline: 3px solid #5c1a1b;
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Student Registration</h1>
+
+    <form>
+        <div class="field">
+            <label class="block" for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="field">
+            <label class="block" for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="field">
+            <label class="block" for="event">Select Event</label>
+            <select id="event" name="event" required>
+                <option value="">-- Choose --</option>
+                <option value="tech-fest">Technical Fest</option>
+                <option value="hackathon">Hackathon</option>
+                <option value="sports">Sports Meet</option>
+            </select>
+        </div>
+
+        <fieldset>
+            <legend>Year of Study</legend>
+            <label><input type="radio" name="year" value="1" required> 1st Year</label><br>
+            <label><input type="radio" name="year" value="2"> 2nd Year</label><br>
+            <label><input type="radio" name="year" value="3"> 3rd Year</label><br>
+            <label><input type="radio" name="year" value="4"> 4th Year</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Clubs Interested In</legend>
+            <label><input type="checkbox" name="club" value="coding"> Coding</label><br>
+            <label><input type="checkbox" name="club" value="music"> Music</label><br>
+            <label><input type="checkbox" name="club" value="sports"> Sports</label>
+        </fieldset>
+
+        <div class="field">
+            <label class="block" for="comments">Comments</label>
+            <textarea id="comments" name="comments" rows="3"></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
